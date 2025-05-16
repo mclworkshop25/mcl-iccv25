@@ -6,26 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <meta name="keywords" content="ICCV, workshop, computer vision, generative AI, HCI, Accessibility">
+  <meta name="keywords" content="ICCV, workshop, computer vision, multimodal leanring, continual learning">
 
   <link rel="shortcut icon" href="static/img/site/favicon_b.png">
 
-  <title>CV4A11y@ICCV25</title>
-  <meta name="description" content="CV4A11y, ICCV 2025 Workshop">
+  <title>MCL@ICCV25</title>
+  <meta name="description" content="MCL, ICCV 2025 Workshop">
 
   <!--Open Graph Related Stuff-->
-  <meta property="og:title" content="Vision Foundation Models and Generative AI for Accessibility Workshop"/>
-  <meta property="og:url" content="https://cv4a11y.github.io/ICCV2025"/>
-  <meta property="og:description" content="CV4A11y, ICCV 2025 Workshop"/>
-  <meta property="og:site_name" content="Vision Foundation Models and Generative AI for Accessibility Workshop"/>
+  <meta property="og:title" content="Multimodal Continual Learning Workshop"/>
+  <meta property="og:url" content="https://mclworkshop25.github.io/mcl-iccv25/ICCV2025/index.html"/>
+  <meta property="og:description" content="MCL, ICCV 2025 Workshop"/>
+  <meta property="og:site_name" content="Multimodal Continual Learning"/>
   <meta property="og:image" content="https://cv4a11y.github.io/ICCV2025/static/img/site/teaser.jpg"/>
 
   <!--Twitter Card Stuff-->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Vision Foundation Models and Generative AI for Accessibility Workshop"/>
+  <meta name="twitter:title" content="Multimodal Continual Learning Workshop"/>
   <meta name="twitter:image" content="https://cv4a11y.github.io/ICCV2025/static/img/site/teaser.jpg">
-  <meta name="twitter:url" content="https://cv4a11y.github.io/ICCV2025"/>
-  <meta name="twitter:description" content="CV4A11y, ICCV 2025 Workshop"/>
+  <meta name="twitter:url" content="https://mclworkshop25.github.io/mcl-iccv25/ICCV2025/index.html"/>
+  <meta name="twitter:description" content="MCL, ICCV 2025 Workshop"/>
 
   <!-- CSS  -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -93,7 +93,7 @@
           <p><br /></p>
 <div class="row">
   <div class="col-xs-12">
-    <center><h1>Workshop on Vision Foundation Models and Generative AI for Accessibility: Challenges and Opportunities </h1></center>
+    <center><h1>Workshop on Multimodal Continual Learning </h1></center>
     <center><h2>ICCV 2025 Workshop</h2></center>
     <center>TBD, 2025</center>
   </div>
@@ -144,94 +144,9 @@
 <div class="row">
   <div class="col-xs-12">
     <p>
-      Vision foundation models and generative AI have made remarkable progress, unlocking groundbreaking capabilities across various domains. These advances hold immense potential to enhance accessibility by enabling AI-powered assistive technologies that improve the daily lives of individuals with disabilities. However, applying the current state-of-the-art AI models to accessibility poses several key challenges, including bias, data scarcity, interpretability, and real-world deployment limitations.
+      In recent years, the machine learning and computer vision community has made significant advancements in continual learning (CL) \cite{wang2024comprehensive,van2022three}—also known as lifelong learning or incremental learning—which enables models to learn new tasks incrementally while retaining previously acquired knowledge without requiring full-data retraining. Most of the early work in CL has focused on unimodal data, such as images, primarily for classification problems. However, with the rise of powerful multimodal models, which unify images, videos, text, and even audio, multimodal continual learning (MCL) \cite{pian2024modality,pian2024continual,yu2024recent,citation-0} has emerged as a crucial research direction. Unlike unimodal CL, where knowledge retention is constrained within a single modality, MCL must handle multiple modalities simultaneously. This introduces new challenges, such as modality-specific forgetting, modality imbalance, and the preservation of cross-modal associations over time.
 
-      This CV4A11y workshop aims to address these challenges, explore emerging research opportunities, and advance the development of more inclusive, efficient, and intelligent accessibility systems. It will provide a platform for discussing cutting-edge research, identifying critical challenges, and fostering collaboration across academia, industry, and accessibility communities. This workshop is highly relevant to computer vision researchers, AI practitioners, HCI experts, and accessibility professionals, as well as anyone interested in developing AI-driven solutions to support individuals with disabilities.    </p>
-  </div>
-</div>
-
-<!-- <p><br /></p>
-<div class="row" id="challenges">
-  <div class="col-xs-12">
-    <h2>Challenges</h2>
-  </div>
-</div>
-<div class="row">
-  <div class="col-xs-12">
-    <p>
-      We establish four challenges:
-    </p>
-    <ul>      
-
-      <li>
-        <strong>3D Object Localization</strong>: to predict a bounding box in a 3D scene corresponding to an object described in natural language
-      </li>      
-
-      <li>
-        <strong>Fine-grained 3D Object Identification</strong>: to identify a referred object among multiple objects in a 3D scene given natural or spatial-based language
-      </li>
-
-      <li>
-        <strong>3D Dense Captioning</strong>: to predict the bounding boxes and the associated descriptions in natural language for objects in a 3D scene
-      </li>
-
-      <li>
-        <strong>ScanEnts3D Challenge</strong>: This challenge measures the impact of exploiting the anchor objects found in referential sentences w.r.t. the task of 3D neural listening. 
-      </li>
-    </ul>
-
-    <div class="row" id="tasks">
-      <div class="col-md-6">
-        <img src="static/img/site/localization.jpg" height="180px" />
-        <p style="text-align: center;">3D Object Localization</p>
-      </div>
-      <div class="col-md-6">
-        <img src="static/img/site/identification.png" height="180px"/>
-        <p style="text-align: center;">Fine-grained 3D Object Identification</p>
-      </div>
-    </div>
-
-    <div class="row" id="tasksB">
-      <div class="col-md-12" style="align-content: center;">
-        <img src="static/img/site/captioning.jpg" />
-        <p style="text-align: center;">3D Dense Captioning</p>
-      </div>
-    </div>
-
-    <div class="row" id="tasksC">
-      <div class="col-md-1"></div>
-      <div class="col-md-10">
-        <img src="static/img/site/scanents3d.png" />
-        <p style="text-align: center;">ScanEnts3D Challenge</p>
-      </div>
-      <div class="col-md-1"></div>
-    </div>
-      
-    
-
-    <p>
-      For each task the challenge participants are provided with prepared training, and test datasets, and automated evaluation scripts. The winner of each task will give a short talk describing their method during this workshop.
-     In addition to the public train-val-test split, benchmarking is done on a hidden test set whose raw data can be downloaded without annotations; 
-      in order to participate in the benchmark, the predictions on the hidden test set are uploaded to the evaluation server, where they are evaluated.      
-    </p>
-
-    <p>
-      The challenge leaderboard is online. If you want to join the challenge, see more details here:
-    </p>
-    <ul>      
-      <li>
-        <strong><b><a href="https://kaldir.vc.in.tum.de/scanrefer_benchmark/benchmark_localization">ScanRefer Challenge</a></b></strong>
-      </li>
-      <li>
-        <strong><b><a href="https://referit3d.github.io/benchmarks.html"> ReferIt3D Challenge</a></b></strong>
-      </li>
-      <li>
-        <strong><b><a href="https://kaldir.vc.in.tum.de/scanrefer_benchmark/benchmark_captioning"> Scan2Cap Challenge</a></b></strong>
-      </li>
-      <li>
-        <strong><b><a href="https://codalab.lisn.upsaclay.fr/competitions/13940"> ScanEnts3D Challenge</a></b></strong>
-      </li>
-    </ul>
+      This MCL workshop aims to address these challenges, explore emerging research opportunities, and advance the development of more inclusive, efficient, and continual learning systems. It will provide a platform for discussing cutting-edge research, identifying critical challenges, and fostering collaboration across academia, industry, and accessibility communities. This workshop is highly relevant to computer vision and machine learning researchers, AI practitioners, and those working on multimodal AI systems.    </p>
   </div>
 </div>
 
@@ -246,12 +161,12 @@
 <div class="row">
   <div class="col-xs-12">
       <p>
-        <span style="font-weight:500;">Topics:</span> This workshop will cover, but is not limited to, the following topics at the intersection of computer vision, generative AI, and accessibility:
+        <span style="font-weight:500;">Topics:</span> This workshop will cover, but is not limited to, the following topics at the intersection of computer vision, multimodal learning, continual learning:
       </p>
       <ul>
 
-        <li> Vision foundation models for accessibility</li>
-        <li> Image and video generation for accessibility</li>
+        <li> Multimodal Continual Learning (MCL)</li>
+        <li> {Multimodal Class-Incremental Learning</li>
         <li> Egocentric perception and wearable AI for accessibility</li>
         <li> Multimodal Large Language Models (MLLMs) for accessibility</li>
         <li> Efficient foundation models for visual scene perception and understanding</li>
